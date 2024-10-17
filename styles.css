@@ -17,6 +17,28 @@ body {
     margin: 0 auto;
 }
 
+/* Promotional Banner */
+.promo-banner {
+    background-color: #f39c12;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.promo-banner p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.promo-banner a {
+    color: white;
+    text-decoration: underline;
+}
+
+.promo-banner a:hover {
+    color: #f4f4f4;
+}
+
 /* Header Styling */
 header {
     background: #2e5d91;
@@ -215,7 +237,7 @@ footer {
 
 /* Modal Styles */
 .modal {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     z-index: 1000;
     padding-top: 100px;
@@ -223,14 +245,14 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
 }
 
 .modal-content {
     display: block;
     margin: auto;
     max-width: 90%;
-    max-height: 90vh;
+    max-height: 90vh; /* Max height for responsive modal */
     border-radius: 8px;
 }
 
