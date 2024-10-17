@@ -1,0 +1,240 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background: #2e5d91;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Sections */
+.about-section, .services-section, .gallery-section, .contact-section {
+    padding: 4rem 0;
+    background: #fff;
+    margin: 2rem 0;
+}
+
+.about-section h2, .services-section h2, .gallery-section h2, .contact-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2e5d91;
+}
+
+.about-section p, .gallery-section p, .contact-section p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2e5d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #244b6c;
+}
+
+/* Services Section */
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 2rem;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2e5d91;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: 45%; /* Adjust width for tablet screens (e.g., iPad) */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%; /* Make cards full width for mobile screens */
+        padding: 1rem;
+    }
+
+    .service-cards {
+        flex-direction: column; /* Stack the cards vertically on mobile */
+        align-items: center;
+    }
+
+    .card h3 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    .card p {
+        font-size: 1rem; /* Adjust paragraph font size for smaller screens */
+    }
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.view-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    background-color: #2e5d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-button:hover {
+    background-color: #244b6c;
+}
+
+/* Contact Section */
+.contact-details {
+    text-align: center;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #2e5d91;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.contact-link:hover {
+    color: #244b6c;
+}
+
+.contact-link i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2e5d91;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

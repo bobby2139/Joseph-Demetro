@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joseph Demetro - Gold Plating & Refurbishing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Joseph Demetro</h1>
+            <p>Specialist in Gold Plating and Refurbishing of Sacred Vessels</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                With over 25 years of experience, I specialize in gold plating and refurbishing sacred vessels for Catholic and Orthodox Churches. My services include on-the-premises plating and refurbishing of chalices, ciborias, monstrances, tabernacles, candlesticks, and other sacred vessels.
+            </p>
+            <a href="#services" class="cta-button">View My Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Gold Plating</h3>
+                    <p>Expert gold plating for chalices, ciborias, monstrances, and more.</p>
+                </div>
+                <div class="card">
+                    <h3>Refurbishing</h3>
+                    <p>Professional refurbishment of tabernacles, candlesticks, and other vessels.</p>
+                </div>
+                <div class="card">
+                    <h3>On-Premises Service</h3>
+                    <p>Convenient on-site services tailored for Catholic and Orthodox Churches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>See some of the sacred vessels we’ve worked on over the years.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/IMG_0354.jpg" alt="Tabernacle Refurbishment" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230905_100520.jpg" alt="Sacred Vessel" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230905_144108.jpg" alt="Sacred Vessel" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230906_100105.jpg" alt="Sacred Vessel" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230906_100109.jpg" alt="Candlestick" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20231026_100352.jpg" alt="Candlestick Set" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20231103_140440.jpg" alt="Chalice" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20231116_170632.jpg" alt="Refurbished Sacred Vessel" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20231116_171512.jpg" alt="Gold-Plated Chalice" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20231219_162959~2.jpg" alt="Tabernacle Front View" class="gallery-img">
+                    <button class="view-button" onclick="openModal(this)">View Larger</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Interested in my services? Contact me directly using the details below.</p>
+            <div class="contact-details">
+                <p><strong>Joseph Demetro</strong></p>
+                <p>
+                    <a href="tel:2149525864" class="contact-link">
+                        <i class="fas fa-phone-alt"></i> 214-952-5864
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:joeydemetro15@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> joeydemetro15@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Joseph Demetro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Image Preview -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
