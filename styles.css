@@ -70,6 +70,7 @@ header nav ul li a:hover {
     margin: 0 auto 2rem;
 }
 
+/* Button styling for centering */
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -80,8 +81,12 @@ header nav ul li a:hover {
     text-decoration: none;
     font-size: 1.1rem;
     margin-top: 20px;
-    text-align: center;
     cursor: pointer;
+}
+
+/* To center the button */
+.about-section {
+    text-align: center; /* This will center align the button in its container */
 }
 
 .cta-button:hover {
