@@ -17,12 +17,12 @@ body {
     margin: 0 auto;
 }
 
-/* Promotional Banner */
+/* Promotional Banner with Color Animation */
 .promo-banner {
-    background-color: #f39c12;
     color: white;
     text-align: center;
     padding: 10px 0;
+    animation: bannerColorChange 2s infinite alternate; /* Faster animation with red and orange */
 }
 
 .promo-banner p {
@@ -37,6 +37,16 @@ body {
 
 .promo-banner a:hover {
     color: #f4f4f4;
+}
+
+/* Keyframe Animation for Red and Orange Colors */
+@keyframes bannerColorChange {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: orange;
+    }
 }
 
 /* Header Styling */
