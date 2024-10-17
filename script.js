@@ -21,6 +21,7 @@ function openModal(element) {
     modalImg.style.maxHeight = '90vh'; // Limits height to 90% of the viewport
 }
 
+// Close modal function
 function closeModal() {
     const modal = document.getElementById('imageModal');
     modal.style.display = 'none';
@@ -29,7 +30,10 @@ function closeModal() {
 // Close modal when clicking outside the image
 window.addEventListener('click', function(event) {
     const modal = document.getElementById('imageModal');
-    if (event.target == modal) {
+    if (event.target === modal) {
         modal.style.display = 'none';
     }
 });
+
+// Close modal when clicking on the close button (×)
+document.querySelector('.close').addEventListener('click', closeModal);
