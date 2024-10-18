@@ -1,9 +1,17 @@
-// Smooth scroll for navigation
+// Smooth scroll for navigation with offset for header
 document.querySelectorAll('header nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetSection = document.querySelector(this.getAttribute('href'));
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+
+        // Get the height of the header
+        const headerOffset = document.querySelector('header').offsetHeight;
+        const sectionPosition = targetSection.offsetTop - headerOffset;
+
+        window.scrollTo({
+            top: sectionPosition,
+            behavior: 'smooth'
+        });
     });
 });
 
